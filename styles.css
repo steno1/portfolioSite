@@ -67,7 +67,7 @@
 .projects{
     display: flex;
     flex-direction: column;
-    gap: 10vh;
+    gap: 20vh;
     padding: 0px 100px;
 }
 .project{
@@ -77,22 +77,35 @@
     height: 100vh;
     overflow: hidden;  
 }
+.project:nth-child(2n){
+    flex-direction: row-reverse;
+}
 .phone{
     flex: 1;
-    width: 185px;
-   height: 300px;
-    border-radius: 20px;
+    width: 24.6875rem;
+   height: 18.75rem;
+    border-radius: 1.25rem;
     position: relative;
+    
 
+}
+.phoneApp{
+   
+    width: 25.3125rem;
+   height: 18.75rem;
+    border-radius: 1.25rem;
+    position: relative;
+    
 }
 .phoneScreen{
    position: absolute;
-   top: 5px;
-   left: 3px;
-    width: 170px;
-    height: 260px;
-   border-radius: 20px;
+   top: 1.125rem;
+   left: 1.125rem;
+    width: 23.125rem;
+    height: 16.25rem;
+   border-radius: 1.25rem;
    overflow: scroll;
+   
   
 }
 .phoneScreen::-webkit-scrollbar{
@@ -103,7 +116,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
 .projectTitle{
@@ -118,8 +131,10 @@
 }
 .projectButton{
     padding: 10px 20px;
+    font-size: large;
     background-color: transparent;
     border: 2px solid #555;
+    border-radius: 10%;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -135,9 +150,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: green;
-    color: #009FBD;
+    background-color:#009FBD;
+    color: white;
+    font-size: large;
+    transition: 1s all;
 }
 .projectButton:hover.projectButton::after {
-    
+    transform: translateX(100%);
+}
+
+.laptop{
+    width: 600px;
+    height: 379px;
+}
+.githubContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.githubTitle{
+    font-size: 80px;
+    color:#009FBD;
+}
+.githubChart{
+width: 820px;
+}
+.dates{
+    padding: 10px;
+    color: #555;
+    font-size: small;
 }
