@@ -3,6 +3,28 @@
   margin: 0; 
   font-family: 'Open Sans', sans-serif; 
 }
+
+.welcome-message {
+    display: block;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    animation: fadeOut 3s ease forwards;
+    color: #009FBD;
+   
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+
+
 .container{
     background-color:#F2E3DB;
     overflow: hidden;
@@ -21,6 +43,28 @@
     
     
 
+  }
+  #time2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+  }
+  #time2 {
+    animation: blinker 3s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
   }
 
 .salute{
@@ -174,10 +218,6 @@ a {
   }
 
 
-
-
-
-
 .projectButton:hover.projectButton::after {
     transform: translateX(100%);
 }
@@ -200,6 +240,17 @@ a {
     margin: auto;
     text-align: center;
 }
+
+ .githubTitle{
+    animation: blinker 3s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
 .githubChart{
 width: 51.25rem;
 }

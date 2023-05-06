@@ -1,3 +1,12 @@
+
+window.onload = function() {
+  setTimeout(function() {
+    document.querySelector('.welcome-message').classList.add('fadeOut');
+  }, 3000);
+};
+
+
+
 function getTime() {
   let now = new Date();
 
@@ -22,8 +31,8 @@ function getTime() {
   let timeString = hours + ":" + minutes + ":" + seconds;
 
   // Display the time and greeting
-  document.getElementById("time").textContent = "Current time in " + timeZone + ": " + timeString + " " + greeting;
-
+  document.getElementById("time").textContent = "Current time in " + timeZone + ": " + timeString;
+  document.getElementById("time2").textContent =greeting;
   setTimeout(getTime, 1000);
 }
 
@@ -40,7 +49,7 @@ function getGreeting(hours) {
   else if (hours >= 17 && hours < 19) {
     greeting = "Good Evening";}
     else {
-      greeting = "Good ";
+      greeting = "Good Night";
     }
 
   return greeting;
