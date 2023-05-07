@@ -42,15 +42,9 @@ function getTime() {
 function getGreeting(hours) {
   let greeting;
 
-  if (hours >= 0 && hours < 6) {
-    greeting = "Good Morning";
-  } else if (hours >= 6 && hours < 12) {
-    greeting = "Good Morning";
-  } else if (hours >= 12 && hours < 17) {
-    greeting = "Good Afternoon";
-  } 
-  else if (hours >= 17 && hours < 20) {
-    greeting = "Good Evening";}
+  if (hours >= 0 && hours < 19) {
+    greeting = "Good Day";
+  }
     else {
       greeting = "Good Night";
     }
@@ -84,12 +78,7 @@ const projectsTitle = document.querySelector(".projectsTitle")
 const phones = document.querySelectorAll(".phone")
 const laptop = document.querySelector(".laptop")
 
-//for(let i = 0; i<365; i++){
 
-  //const el = document.createElement("div")
- // el.classList = list.includes(i) ? "box active" : "box"
- // boxContainer.appendChild(el)
-//}
 
 function createBoxes(){
   const container =document.getElementById("containers");
