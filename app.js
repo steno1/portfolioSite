@@ -49,7 +49,7 @@ function getGreeting(hours) {
   } else if (hours >= 12 && hours < 17) {
     greeting = "Good Afternoon";
   } 
-  else if (hours >= 17 && hours < 19) {
+  else if (hours >= 17 && hours < 20) {
     greeting = "Good Evening";}
     else {
       greeting = "Good Night";
@@ -116,6 +116,35 @@ function createBoxes(){
     
   }
 }
+
+
+
+
+const form = document.getElementById('contact-form');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const name = nameInput.value;
+  const email = emailInput.value;
+  const message = messageInput.value;
+  
+  const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+  
+  window.location.href = `mailto:stenonicolas@yahoo.com?subject=Contact Form Submission&body=${encodeURIComponent(body)}`;
+//clearing the input field after the message has been sent
+  nameInput.value = '';
+  emailInput.value = '';
+  messageInput.value = '';
+
+
+});
+
+
+
 
 window.onload=function(){
  
