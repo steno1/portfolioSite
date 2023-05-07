@@ -2,9 +2,11 @@
 window.onload = function() {
   setTimeout(function() {
     document.querySelector('.welcome-message').classList.add('fadeOut');
-  }, 3000);
-};
+   }, 3000);
+ };
 
+const currentYear = new Date().getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
 
 
 function getTime() {
@@ -35,6 +37,7 @@ function getTime() {
   document.getElementById("time2").textContent =greeting;
   setTimeout(getTime, 1000);
 }
+
 
 function getGreeting(hours) {
   let greeting;
@@ -68,10 +71,6 @@ function getFormattedTimeZone(timeZoneOffset) {
 }
 
 getTime();
-
-
-
-
 
 
 const boxContainer = document.querySelector(".boxContainer")

@@ -28,6 +28,7 @@
 .container{
     background-color:#F2E3DB;
     overflow: hidden;
+    z-index: 999;
 }
 #time {
     font-size: 20px;
@@ -72,6 +73,7 @@
     display: flex;
     align-items: center; 
     overflow: hidden;
+    z-index: 999;
 
 }
 .saluteText{
@@ -115,6 +117,7 @@
     url("./img/imagesProgrammer.jpg");
     background-size: cover;
     background-position: cover;
+    z-index: 99;
 
 }
 .jobTitle{
@@ -129,6 +132,7 @@
     flex-direction: column;
     gap: 10vh;
     padding: 0px 100px;
+    z-index: -1;
 }
 .project{
     display: flex;
@@ -141,36 +145,34 @@
     flex-direction: row-reverse;
 }
 .phone{
+    width:600px;
+    height: 379px;
     flex: 1;
-    width: 24.6875rem;
-   height: 18.75rem;
-    border-radius: 1.25rem;
     position: relative;
+    justify-content: center;
+    align-items: center;
     
 
 }
+.phoneImg{
+    width: 400px;
+    border-radius: 10%;
+}
 .phoneApp{
-   
-    width: 25.3125rem;
-   height: 18.75rem;
-    border-radius: 1.25rem;
-    position: relative;
+   width: 100%;
     
 }
 .phoneScreen{
-   position: absolute;
-   top: 1.125rem;
-   left: 1.125rem;
-    width: 23.125rem;
-    height: 16.25rem;
-   border-radius: 1.25rem;
-   overflow: scroll;
+    width: 310px;
+    height: 260px;
+    position: absolute;
+    top: 12px;
+    left: 48px;
+    overflow: scroll;
    
   
 }
-.phoneScreen::-webkit-scrollbar{
-    display: none;
-}
+
 
 .projectDetail{
     flex: 1;
@@ -187,6 +189,7 @@
 .projectsTitle{
     font-size: 5vw;
     color:#009FBD;
+
 }
 .projectDesc{
     font-size: 1.25rem;
@@ -223,8 +226,34 @@ a {
 }
 
 .laptop{
-    width: 37.5rem;
-    height: 23.6875rem;
+    width:600px;
+    height: 379px;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+.laptopScreen{
+    width: 310px;
+    height: 260px;
+    position: absolute;
+    top: 18px;
+    left: 48px;
+    overflow: scroll;
+    
+}
+
+.laptopApp{
+
+ width: 100%; 
+
+  
+}
+.laptopImg{
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
 }
 .githubContainer{
     height: 100vh;
@@ -327,11 +356,7 @@ width: 51.25rem;
       transform: none !important;
     }
    
-   
-    
-    .githubChart{
-     /* display: none; */
-    }
+
   
     .githubTitle{
       text-align: center;
@@ -351,4 +376,23 @@ width: 51.25rem;
         width: 18rem;
         font-size: small;
     }
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Georgia', serif;
+    opacity: 80%;
+  }
+
+  footer p {
+    margin: 0;
+  }
+  
+  footer span {
+    font-weight: bold;
   }
