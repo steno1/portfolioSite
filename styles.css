@@ -9,7 +9,7 @@
     text-align: center;
     margin-top: 2.5rem;
     font-size: 1.5rem;
-    animation: fadeOut 3s ease forwards;
+    animation: fadeOut 6s ease forwards;
     color: #009FBD;
    
   }
@@ -93,6 +93,7 @@
 .saluteImg{
     width: 100%;
     border-radius: 5%;
+    object-fit: contain;
 }
 .nameContainer{
     display: flex;
@@ -137,6 +138,7 @@
 .project{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     height: 100vh;
     overflow: hidden;  
@@ -145,8 +147,8 @@
     flex-direction: row-reverse;
 }
 .phone{
-    width:600px;
-    height: 379px;
+    width:37.5rem;
+    height: 23.6875rem;
     flex: 1;
     position: relative;
     justify-content: center;
@@ -155,7 +157,7 @@
 
 }
 .phoneImg{
-    width: 400px;
+    width: 25rem;
     border-radius: 10%;
 }
 .phoneApp{
@@ -163,11 +165,11 @@
     
 }
 .phoneScreen{
-    width: 310px;
-    height: 260px;
+    width: 19.375rem;
+    height:16.25rem;
     position: absolute;
-    top: 12px;
-    left: 48px;
+    top: 0.75rem;
+    left: 3rem;
     overflow: scroll;
    
   
@@ -187,6 +189,7 @@
     padding: 0.625rem;
 }
 .projectsTitle{
+  margin-top: 70px;
     font-size: 5vw;
     color:#009FBD;
 
@@ -235,11 +238,11 @@ a {
 
 }
 .laptopScreen{
-    width: 310px;
-    height: 260px;
+    width: 19.375rem;
+    height: 16.25rem;
     position: absolute;
-    top: 18px;
-    left: 48px;
+    top: 1.125rem;
+    left: 3rem;
     overflow: scroll;
     
 }
@@ -366,9 +369,14 @@ width: 51.25rem;
     border-radius: 5px;
     cursor: pointer;
   }
-  
 
-  
+  .phone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   @media screen and (max-width:1024px) {
   
     .projects{
@@ -380,13 +388,77 @@ width: 51.25rem;
       flex-direction: column;
       height: max-content;
     }
+    .projectsTitle{
+      z-index: 999;
+      text-align: center;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 40px;
+      font-size: 20px;
+    }
     .project:nth-child(2n){
       flex-direction: column;
+    }
+    .intro{
+      margin-top: -120px;
+    }
+    .phone {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    
+    .phoneScreen {
+      display: flex;
+      height: 50vh;
+      position: absolute;
+      left: 150px;
+      overflow: scroll;
+    }
+
+
+    .saluteText{
+   
+      color:#009FBD;
+      font-size: 35vw;
+      cursor: default;
+      
+  }
+    
+    .welcome-message{
+      font-size: smaller;
+    }
+
+    .saluteImgContainer{
+      border-radius: 50%;
+    }
+    .saluteImg{
+      width: 220px;
+  height: 170px; 
+border-radius: 30%;
+      
+    }
+    .nameContainer{
+      height: 300px;
+    }
+    .jobTitleContainer{
+      height: 500px;
     }
   
     .phone,.laptop{
       transform: none !important;
     }
+
+    .laptopScreen{
+      width: 19.375rem;
+      height: 16.25rem;
+      position: absolute;
+      top: 1.125rem;
+      left: 70px;
+      overflow: scroll;
+      
+  }
    
 
   
@@ -410,6 +482,19 @@ width: 51.25rem;
     }
   }
 
+  .phoneImg{
+    width: 25rem;
+    border-radius: 10%;}
+
+    .phoneApp{
+      width: 100%;
+       
+   }
+   .phone-container {
+    transform: none;
+  }
+
+
   footer {
     background-color: #333;
     color: #fff;
@@ -428,3 +513,5 @@ width: 51.25rem;
   footer span {
     font-weight: bold;
   }
+
+  

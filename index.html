@@ -46,7 +46,7 @@
 
 
 <div class="saluteImgContainer">
-<img src="./img/messi.jpg" alt="messi" class="saluteImg"/>
+<img src="./img/IMG_20230613_150550_683.jpg" alt="profile-pics" class="saluteImg"/>
 </div>
 
 </div>
@@ -62,11 +62,12 @@
 </div>
 </div>
 
+<!--PROJECTS--> 
 
-<!--PROJECTS-->
 <div class="projects">
     <h1 class="projectsTitle"> Here are some of my projects</h1>
 <div class="project">
+    <div class="phone-container">
 <div class="phone">
     <img src="./img/laptopWallpaper.jpg" alt="" class="phoneImg"/>
     <div class="phoneScreen">
@@ -74,6 +75,7 @@
  <img src="./img/screenshotPng.png" alt="" class="phoneApp"/>
     
     </div>
+</div>
 </div>
 
 <div class="projectDetail">
@@ -102,9 +104,10 @@ type and scrambled it
         <a href="https://github.com/steno1/laststenomovieAdmin">Github</a></button>
 
 </div>
-
 </div>
 
+<!--   
+                            
 <div class="project">
 <div class="laptop">
     <img src="./img/myWallPaper.jpg" alt="" class="laptopImg"/>
@@ -148,7 +151,12 @@ type and scrambled it
 
 </div>
 
-</div>
+ -->  
+
+</div> 
+
+
+ 
 <!--GITHUB-->
 <div class="githubContainer">
 <h1 class="githubTitle">Want to see all projects?</h1>
@@ -187,6 +195,26 @@ type and scrambled it
 
 
 </div>
+
+
+<script>
+    const projectsTitle = document.querySelector(".projectsTitle");
+    const colors = ["#40128b", "#19A7CE", "green"];
+    let currentIndex = 0;
+
+    function blinkProjectsTitle() {
+      projectsTitle.style.color = colors[currentIndex];
+      currentIndex = (currentIndex + 1) % colors.length;
+    }
+
+    // Call the blinkProjectsTitle function every 3 seconds
+    setInterval(blinkProjectsTitle, 1000);
+  </script>
+
+
+
+
+
 
     <script src="./app.js"></script>
 </body>

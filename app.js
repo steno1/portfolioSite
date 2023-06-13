@@ -1,10 +1,4 @@
 
-window.onload = function() {
-  setTimeout(function() {
-    document.querySelector('.welcome-message').classList.add('fadeOut');
-   }, 3000);
- };
-
 const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
 
@@ -74,7 +68,7 @@ const authorName = document.querySelector(".name")
 const jobTitleContainers = document.querySelector(".jobTitleContainer")
 const jobTitles = document.querySelector(".jobTitle")
 
-const projectsTitle = document.querySelector(".projectsTitle")
+//const projectsTitle = document.querySelector(".projectsTitle")
 const phones = document.querySelectorAll(".phone")
 const laptop = document.querySelector(".laptop")
 
@@ -107,8 +101,6 @@ function createBoxes(){
 }
 
 
-
-
 const form = document.getElementById('contact-form');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
@@ -133,26 +125,33 @@ form.addEventListener('submit', function(event) {
 });
 
 
-
-
 window.onload=function(){
  
   createBoxes();
 }
 
-
 window.addEventListener("scroll", ()=>{
   let offsetY = window.scrollY
   saluteTextContainer.style.transform= `translateY(${offsetY * 0.1}px)`
-  saluteImgContainer.style.transform= `translate(${offsetY * 0.4}px, ${offsetY * 0.7}px)`
-  authorName.style.transform= `translateX(${offsetY * 0.1}px)`
-  
+  saluteImgContainer.style.transform= `translate(${offsetY * 0.4}px, ${offsetY * 0.7}px)`;
+
   jobTitleContainers.style.backgroundPositionY = `${offsetY * 0.1}px`
   //jobTitleContainer.style.backgroundPositionY = `${-offsetY * 0.5}px`
   jobTitles.style.transform = `translateX(calc(200vh - ${offsetY}px))`
   //jobTitles.style.transform = `translateX(calc(-300vh + ${offsetY}px))`
-  projectsTitle.style.transform = `translateY(calc(300vh - ${offsetY}px))`
+  
+  //projectsTitle.style.transform = `translateY(calc(300vh - ${offsetY}px))`
   phones[0].style.transform = `translateX(calc(345vh - ${offsetY}px))`
   //laptop.style.transform = `translateX(calc(600vh - ${offsetY}px))`
   laptop.style.transform = `translateX(calc(440vh - ${offsetY}px))`
+
+
+  if (window.innerWidth <= 768) {
+    authorName.style.transform = `translateX(${offsetY * 0}px)`;
+    //projectsTitle.style.transform = "translateY(0)";
+  } else {
+    authorName.style.transform = `translateX(${offsetY * 0.1}px)`;
+   // projectsTitle.style.transform = `translateY(calc(300vh - ${offsetY}px))`;
+  }
+
 })
