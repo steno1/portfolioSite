@@ -210,11 +210,54 @@ type and scrambled it
     // Call the blinkProjectsTitle function every 3 seconds
     setInterval(blinkProjectsTitle, 1000);
   </script>
+  <!--   const projectsTitle = document.querySelector
+    (".projectsTitle");: This line selects the HTML element with the
+     class name "projectsTitle" using the querySelector method from 
+     the document object. It assigns the reference to that 
+    element to the variable projectsTitle.
+
+const colors = ["#40128b", "#19A7CE", "green"];: Here, an array called
+ colors is defined. It contains three color values in hexadecimal
+  format (#40128b, #19A7CE, and "green").
+
+let currentIndex = 0;: This line declares a variable currentIndex and 
+initializes it with the value 0. It will be used to keep track of the 
+current index in the colors array.
+
+function blinkProjectsTitle() { ... }: This is a function declaration
+ named blinkProjectsTitle. It defines the code that will be executed
+  to create the blinking effect.
+
+projectsTitle.style.color = colors[currentIndex];: Inside the 
+blinkProjectsTitle function, this line sets the color CSS property of
+ the projectsTitle element to the color value at the current index in 
+ the colors array. This changes the text color of the element.
+
+currentIndex = (currentIndex + 1) % colors.length;: After setting the
+ color, this line increments the currentIndex by 1 and then takes the
+  modulo (%) of colors.length. This ensures that the index wraps 
+  around to 0 when it reaches the end of the colors array. It allows
+   the colors to cycle continuously.
+
+setInterval(blinkProjectsTitle, 1000);: The setInterval function is
+ used to repeatedly call the blinkProjectsTitle function at a 
+ specified interval. In this case, it is called every 1000 
+ milliseconds (1 second), causing the projectsTitle element to
+  change color every second and create a blinking effect.
+
+currentIndex is incremented by 1: currentIndex = currentIndex + 1.
+The modulo operator % is applied to currentIndex with the operand 
+colors.length.
+If currentIndex is less than colors.length, the value of 
+currentIndex % colors.length will be the same as currentIndex.
+If currentIndex is equal to colors.length, the remainder will be 0,
+ and currentIndex % colors.length will be 0.
+If currentIndex is greater than colors.length, the remainder will be
+ the difference between currentIndex and the largest 
+multiple of colors.length that is less than or equal to currentIndex.
 
 
-
-
-
+-->
 
     <script src="./app.js"></script>
 </body>
