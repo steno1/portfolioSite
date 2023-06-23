@@ -137,7 +137,7 @@ window.addEventListener("scroll", ()=>{
 
   jobTitleContainers.style.backgroundPositionY = `${offsetY * 0.1}px`
   //jobTitleContainer.style.backgroundPositionY = `${-offsetY * 0.5}px`
-  jobTitles.style.transform = `translateX(calc(185vh - ${offsetY}px))`
+  jobTitles.style.transform = `translateX(calc(195vh - ${offsetY}px))`
   //jobTitles.style.transform = `translateX(calc(-300vh + ${offsetY}px))`
   
   //projectsTitle.style.transform = `translateY(calc(300vh - ${offsetY}px))`

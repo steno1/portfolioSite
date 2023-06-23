@@ -3,6 +3,11 @@
   margin: 0; 
   font-family: 'Open Sans', sans-serif; 
 }
+.saluteText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .welcome-message {
