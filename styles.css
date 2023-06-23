@@ -396,37 +396,6 @@ width: 51.25rem;
 
 
   @media screen and (max-width:1024px) {
-
-
-    .scrollContainer {
-      overflow-x: scroll;
-      overflow-y: hidden;
-      white-space: nowrap;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .jobTitleContainer {
-      display: inline-block;
-      text-align: center;
-      background-color: lightblue;
-      padding: 10px;
-    }
-    
-    .jobTitle {
-      margin: 0;
-    }
-    
-
-
-
-
-    
-
-
-
-
   
     .projects{
       padding: 0 1.875rem;
