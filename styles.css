@@ -8,6 +8,9 @@
   justify-content: center;
   align-items: center;
 }
+.users{
+  font-weight: 900;
+}
 
 
 .welcome-message {
@@ -182,6 +185,8 @@
     top: 0.75rem;
     left: 3rem;
     overflow: scroll;
+    margin: 10px; 
+    padding: 10px;
 }
 
 
