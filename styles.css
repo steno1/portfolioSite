@@ -438,6 +438,11 @@ width: 51.25rem;
       height: max-content;
   
   }
+  .projectDesc {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
 
     .project:nth-child(2n){
       flex-direction: column;
