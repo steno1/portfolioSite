@@ -420,8 +420,10 @@ width: 51.25rem;
       max-width:148px;
       left: -70px;
       margin-bottom: 30px;
+      border-radius: 10%;
       
     }
+    
     .projects{
       justify-content: center;
       justify-items: center;
@@ -453,6 +455,10 @@ width: 51.25rem;
       bottom: 2.5%;
       border-radius: 5%;
       border-radius: 5%;
+    }
+    .projectDetail{
+      width: 350px !important;
+      display: flex;
     }
   
     .projectsTitle{
