@@ -50,10 +50,8 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    
-    
-
   }
+
   #time2 {
     font-size: 25px;
     font-weight: bold;
@@ -272,11 +270,9 @@ a {
 }
 
 .laptopApp{
-
  width: 100%; 
-
-  
 }
+
 .laptopImg{
     width: 400px;
     height: 300px;
@@ -414,11 +410,28 @@ width: 51.25rem;
   @media screen and (max-width:1024px) {
 
     .phone-container {
-      width: 100%;
-      height: auto;
+    max-width: 80%;
+    display: flex;
+    height: 40vh;
+    }
+
+    .phone{
+      transform: none !important;
+      max-width:148px;
+      left: -70px;
       margin-bottom: 30px;
       
     }
+    .projects{
+      justify-content: center;
+      justify-items: center;
+    }
+    .project{
+      width: 70%;
+      margin: auto;
+      justify-content: center;
+      justify-items: center;
+        }
   
     .projects{
       padding: 0 1.875rem;
@@ -426,18 +439,19 @@ width: 51.25rem;
     }
     .phoneImg {
       display: flex;
-      width: 90%;
+      width: 200% !important;
       height: 100%;
       object-fit: cover;
     }
   
     .phoneScreen {
-      width: 100%;
+      width: 215%;
       height: 95%;
       top: 2.5%;
       left: 2.5%;
       right: 33.5%;
       bottom: 2.5%;
+      border-radius: 5%;
       border-radius: 5%;
     }
   
@@ -464,6 +478,7 @@ width: 51.25rem;
       height: max-content;
   
   }
+  
   .projectDesc {
     text-align: center;
     padding: 10px;
@@ -516,10 +531,7 @@ border-radius: 30%;
     .jobTitleContainer{
       height: 500px;
     }
-  
-    .phone,.laptop{
-      transform: none !important;
-    }
+
 
     .laptopScreen{
       width: 19.375rem;
