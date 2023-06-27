@@ -115,7 +115,7 @@ form.addEventListener('submit', function(event) {
   
   const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
   
-  window.location.href = `mailto:stenonicolas@yahoo.com?subject=Contact Form Submission&body=${encodeURIComponent(body)}`;
+  window.location.href = `mailto:stenonicolas@yahoo.com?subject=Portfolio Form Submission&body=${encodeURIComponent(body)}`;
 //clearing the input field after the message has been sent
   nameInput.value = '';
   emailInput.value = '';
