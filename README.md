@@ -8,12 +8,12 @@ This documentation provides an overview and explanation of the features and func
 The website is built using HTML, CSS, and JavaScript, without any specific framework.It includes a dynamic time display, various animations, mobile responsiveness, and
 a contact section that allows visitors to send an email.
 
-Table of Contents
-   Structure
-   Dynamic Time Display
-   Animations
-   Mobile Responsiveness
-  Contact Section
+Table of Contents;
+   Structure.
+   Dynamic Time Display.
+   Animations.
+   Mobile Responsiveness.
+  Contact Section.
                                             
 1. Structure
 The structure of my portfolio website consists of multiple HTML files and a CSS file.
