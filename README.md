@@ -1,20 +1,20 @@
 // you can view site at https://steno1.github.io/portfolioSite/
 Portfolio Site Documentation
 
-                                              Introduction
+  Introduction
 
 This documentation provides an overview and explanation of the features and functionality of my portfolio website. 
 
 The website is built using HTML, CSS, and JavaScript, without any specific framework.It includes a dynamic time display, various animations, mobile responsiveness, and
 a contact section that allows visitors to send an email.
 
-                                            Table of Contents
-                                                Structure
-                                            Dynamic Time Display
-                                                Animations
-                                          Mobile Responsiveness
-                                              Contact Section
-
+Table of Contents
+   Structure
+   Dynamic Time Display
+   Animations
+   Mobile Responsiveness
+  Contact Section
+                                            
 1. Structure
 The structure of my portfolio website consists of multiple HTML files and a CSS file.
 
@@ -30,7 +30,6 @@ img/: A directory containing the images used in my portfolio.
 2. Dynamic Time Display
 The dynamic time display feature on my website allows visitors to see the current time. This is implemented using JavaScript.
 The script responsible for this functionality is located in the app.js file.
-
 
 3. Animations
 My portfolio website includes various animations to enhance the user experience and make the site visually appealing.
